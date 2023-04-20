@@ -27,11 +27,16 @@ addbtn.addEventListener("click",
 
 function(){
     let itemslist = document.querySelector(".list")
-    let inputitem = document.querySelector(".item").value;  
-    
+    let inputitem = document.querySelector(".item").value.trim().toLowerCase()  
     console.log(inputitem)
-    myarr.push(inputitem)
-    console.log(myarr)
-    itemslist.innerHTML += `<li>${[inputitem]}</li>`;
+
+    // AGGIUNGO CONDIZIONE, SE VUOTA NON AGGIUNGERE
+    
+    if(inputitem != ""){
+        myarr.push(inputitem)
+        console.log(myarr)
+        itemslist.innerHTML += `<li>${[inputitem]}</li>`;
+    }
+    
     }
 )
