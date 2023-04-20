@@ -8,6 +8,7 @@
 
 body{
     background-color: grey;
+    background-color: brown;
 }
 
 
@@ -15,8 +16,6 @@ h1{
     font-size: 4em;
 }
 .container{
-    
-    height: 100vh;
     margin-inline: auto;
     padding: 3em;
     background-color: brown;
@@ -25,8 +24,34 @@ h1{
 
 
 li{
-    margin-top: 5px;
+    margin-top: 1em;
     font-size: 3em;
     list-style: none;
 }
 
+
+.inputs{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+
+.item{
+    width: 150px;
+    height: 40px;
+    font-size: 1.5em;
+    border: 2px solid black;
+    padding: .5em;
+}
+
+
+.add{
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    padding: .3em;
+    font-size: 1.2em;
+
+}

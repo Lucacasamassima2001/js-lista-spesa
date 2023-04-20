@@ -8,12 +8,30 @@ let myarr = [
     "latte",
     "mele",
 ]
-const addbtn = document.querySelector(".add")
+
+// CICLO WHILE PER STAMPARE GLI ELEMENTI DELL'ARRAY
+
 const itemslist = document.querySelector(".list")
 let i = 0;
 while( i < myarr.length) {
     console.log(myarr[i]);
-    i++;
     itemslist.innerHTML += `<li>${myarr[i]}</li>`;
+    i++;
 }
 
+const addbtn = document.querySelector(".add")
+
+// AGGIUNGI ELEMENTI CON BOTTONE
+
+addbtn.addEventListener("click", 
+
+function(){
+    let itemslist = document.querySelector(".list")
+    let inputitem = document.querySelector(".item").value;  
+    
+    console.log(inputitem)
+    myarr.push(inputitem)
+    console.log(myarr)
+    itemslist.innerHTML += `<li>${[inputitem]}</li>`;
+    }
+)
